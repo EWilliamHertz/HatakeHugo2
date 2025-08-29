@@ -86,6 +86,7 @@
                     <li><a href="#services" class="nav-link text-white font-semibold">Services</a></li>
                     <li><a href="#memoir" class="nav-link text-white font-semibold">The Memoir</a></li>
                     <li><a href="#connect" class="nav-link text-white font-semibold">Connect</a></li>
+                    <li><a href="login.html" id="login-btn" class="btn bg-accent-gold text-gray-900 font-bold py-2 px-4 rounded-lg text-sm">Login</a></li>
                 </ul>
                 <button id="mobile-menu-button" class="md:hidden text-white text-2xl">
                     <i class="fas fa-bars"></i>
@@ -103,6 +104,7 @@
         <a href="#services" class="text-white text-2xl font-semibold">Services</a>
         <a href="#memoir" class="text-white text-2xl font-semibold">The Memoir</a>
         <a href="#connect" class="text-white text-2xl font-semibold">Connect</a>
+        <a href="login.html" class="text-accent-gold text-2xl font-semibold">Login / Register</a>
     </div>
 
     <main>
@@ -279,6 +281,10 @@
         </div>
     </footer>
 
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js" type="module"></script>
+    <script src="firebase.js" type="module"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {

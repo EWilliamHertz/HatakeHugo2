@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ernst-William Hertz - Entrepreneur | Strategist | Builder</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        /* Custom Styles to align with the strategic document */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* A deep navy-blue instead of pure black */
+            color: #E5E7EB; /* A soft off-white for text */
+        }
+        h1, h2, h3, h4, .font-display {
+            font-family: 'Playfair Display', serif;
+        }
+        .accent-gold {
+            color: #D4AF37; /* A muted, strategic gold accent */
+        }
+        .bg-accent-gold {
+            background-color: #D4AF37;
+        }
+        .border-accent-gold {
+            border-color: #D4AF37;
+        }
+        .btn {
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.2);
+        }
+        /* Fade-in animation */
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        .fade-in-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #D4AF37;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header -->
+    <header id="header" class="bg-gray-900/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <nav class="flex items-center justify-between">
+                <a href="#home" class="font-display text-2xl font-bold text-white">Ernst-William Hertz</a>
+                <ul class="hidden md:flex items-center space-x-8">
+                    <li><a href="#founder" class="nav-link text-white font-semibold">The Founder</a></li>
+                    <li><a href="#vision" class="nav-link text-white font-semibold">The Vision</a></li>
+                    <li><a href="#craft" class="nav-link text-white font-semibold">The Craft</a></li>
+                    <li><a href="#memoir" class="nav-link text-white font-semibold">The Memoir</a></li>
+                    <li><a href="#connect" class="nav-link text-white font-semibold">Connect</a></li>
+                </ul>
+                <button id="mobile-menu-button" class="md:hidden text-white text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-0 bg-gray-900/90 z-40 hidden flex-col items-center justify-center space-y-8">
+        <button id="close-mobile-menu" class="absolute top-6 right-6 text-white text-3xl">&times;</button>
+        <a href="#founder" class="text-white text-2xl font-semibold">The Founder</a>
+        <a href="#vision" class="text-white text-2xl font-semibold">The Vision</a>
+        <a href="#craft" class="text-white text-2xl font-semibold">The Craft</a>
+        <a href="#memoir" class="text-white text-2xl font-semibold">The Memoir</a>
+        <a href="#connect" class="text-white text-2xl font-semibold">Connect</a>
+    </div>
+
+    <main>
+        <!-- Section 1: Home -->
+        <section id="home" class="min-h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://i.imgur.com/9ql4lD1.jpeg');">
+            <div class="absolute inset-0 bg-black/70"></div>
+            <div class="relative z-10 text-center px-6 fade-in-section">
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-bold text-white leading-tight mb-4">Ernst-William Hertz</h1>
+                <p class="text-lg md:text-2xl font-display text-gray-300 mb-8 max-w-3xl mx-auto">Entrepreneur. Strategist. Builder.<br>Forging innovative ventures from unconventional experience.</p>
+                <a href="#founder" class="btn bg-accent-gold text-gray-900 font-bold py-3 px-8 rounded-lg text-lg">
+                    Discover The Journey
+                </a>
+            </div>
+        </section>
+
+        <!-- Section 2: The Founder's Manifesto -->
+        <section id="founder" class="py-20 md:py-32 bg-gray-900">
+            <div class="container mx-auto px-6 max-w-4xl text-center fade-in-section">
+                <h2 class="text-4xl md:text-5xl font-display mb-6">The Founder's Manifesto</h2>
+                <div class="w-24 h-1 bg-accent-gold mx-auto mb-12"></div>
+                <div class="text-left text-lg text-gray-300 space-y-6">
+                    <p>My journey began not in a boardroom, but with the quiet hum of a computer and an insatiable curiosity for the systems that govern our world. At seven, I programmed my first web browser—an early sign of a lifelong drive to deconstruct, understand, and build.</p>
+                    <p>My path since has been anything but linear. It led me through environments where the stakes were absolute and the lessons were permanent. This was an unconventional education in high-stakes strategy, complex logistics, and crisis management—an education earned through the severe, systemic consequences of strategic failure. It was in these crucibles of adversity that I gained an unfiltered understanding of risk, resilience, and the relentless pursuit of an objective when all conventional options have failed.</p>
+                    <p>Incarceration became an unexpected catalyst. Stripped of everything, I found clarity and a renewed sense of purpose. It was there, under the most restrictive conditions imaginable, that I honed my strategic planning skills, drafting the blueprints for the legitimate, innovative ventures that now define my focus.</p>
+                    <p>Today, I channel every lesson from my past into a single mission: to build. The same drive that navigated chaos now architects systems for growth, efficiency, and positive impact. My story is not one of glorification but of transformation—a testament to the unwavering belief that from the deepest adversity, one can forge the tools to create a better future.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: The Vision (Ventures) -->
+        <section id="vision" class="py-20 md:py-32 bg-gray-800/50">
+            <div class="container mx-auto px-6 fade-in-section">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-display mb-4">The Vision: A Portfolio of Ventures</h2>
+                    <p class="text-lg text-gray-400 max-w-3xl mx-auto">Transforming complex challenges into scalable, technology-driven solutions.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Venture Card: Hatake.eu -->
+                    <div class="bg-gray-900 rounded-lg p-8 flex flex-col hover:shadow-2xl hover:shadow-accent-gold/10 transition-shadow duration-300">
+                        <h3 class="text-2xl font-display accent-gold mb-2">Hatake.eu</h3>
+                        <p class="text-gray-400 mb-4 font-semibold">The Challenge:</p>
+                        <p class="text-gray-300 mb-6 text-sm">The Trading Card Game (TCG) market lacks a unified, user-centric platform, forcing communities across fragmented and outdated systems.</p>
+                        <p class="text-gray-400 mb-4 font-semibold">Strategic Blueprint:</p>
+                        <p class="text-gray-300 mb-6 text-sm flex-grow">Develop a next-generation social media and marketplace platform for the TCG community, leveraging superior UI/UX and integrated features to compete with established giants.</p>
+                        <a href="http://hatake.eu/" target="_blank" rel="noopener noreferrer" class="btn mt-auto text-center bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-accent-gold hover:text-gray-900">Visit Website</a>
+                    </div>
+                    <!-- Venture Card: FlowBooks -->
+                    <div class="bg-gray-900 rounded-lg p-8 flex flex-col hover:shadow-2xl hover:shadow-accent-gold/10 transition-shadow duration-300">
+                        <h3 class="text-2xl font-display accent-gold mb-2">FlowBooks</h3>
+                        <p class="text-gray-400 mb-4 font-semibold">The Challenge:</p>
+                        <p class="text-gray-300 mb-6 text-sm">Startups and small businesses are burdened by complex, time-consuming bookkeeping software that stifles their growth and agility.</p>
+                        <p class="text-gray-400 mb-4 font-semibold">Strategic Blueprint:</p>
+                        <p class="text-gray-300 mb-6 text-sm flex-grow">Create an AI-powered bookkeeping platform to automate financial management, offering an intuitive, seamless service for invoicing and finance that directly challenges market incumbents.</p>
+                         <a href="https://www.flowbooks.se" target="_blank" rel="noopener noreferrer" class="btn mt-auto text-center bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-accent-gold hover:text-gray-900">Visit Website</a>
+                    </div>
+                    <!-- Venture Card: ActionPad -->
+                    <div class="bg-gray-900 rounded-lg p-8 flex flex-col hover:shadow-2xl hover:shadow-accent-gold/10 transition-shadow duration-300">
+                        <h3 class="text-2xl font-display accent-gold mb-2">ActionPad</h3>
+                        <p class="text-gray-400 mb-4 font-semibold">The Challenge:</p>
+                        <p class="text-gray-300 mb-6 text-sm">Global teams struggle with disjointed project management tools, leading to communication silos and inefficient workflows across different languages.</p>
+                        <p class="text-gray-400 mb-4 font-semibold">Strategic Blueprint:</p>
+                        <p class="text-gray-300 mb-6 text-sm flex-grow">Build a dynamic project management tool with synchronized tasks, team chat, and automatic data translation (English, Swedish, Mandarin) to streamline international collaboration.</p>
+                        <a href="https://ewilliamhertz.github.io/ActionPad/" target="_blank" rel="noopener noreferrer" class="btn mt-auto text-center bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg hover:bg-accent-gold hover:text-gray-900">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 4: The Craft (Web Design) -->
+        <section id="craft" class="py-20 md:py-32 bg-gray-900">
+            <div class="container mx-auto px-6 fade-in-section">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-display mb-4">The Craft: Digital Architecture</h2>
+                    <p class="text-lg text-gray-400 max-w-3xl mx-auto">Building robust, beautiful, and intuitive digital experiences from the ground up.</p>
+                </div>
+                <div class="lg:flex lg:items-center lg:space-x-12">
+                    <div class="lg:w-1/2 mb-12 lg:mb-0">
+                         <h3 class="text-3xl font-display accent-gold mb-6">Featured Project: Måns Holmqvist</h3>
+                         <p class="text-gray-300 mb-4">For the launch of his book "Mellan Himmel och Hallucination", author Måns Holmqvist required a digital presence that was both aesthetically striking and deeply reflective of the book's themes. I was commissioned to design and build the official website.</p>
+                         <p class="text-gray-300 mb-6">The result is a clean, modern, and fully responsive author platform that serves as a central hub for readers. It provides an immersive experience that captures the essence of the author's work while serving key commercial functions.</p>
+                         <a href="https://mellanhimmelochhallucination.se" target="_blank" rel="noopener noreferrer" class="btn bg-accent-gold text-gray-900 font-bold py-3 px-6 rounded-lg inline-block">View Live Site <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                    <div class="lg:w-1/2">
+                         <h3 class="text-3xl font-display accent-gold mb-6">Core Competencies</h3>
+                         <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 text-center">
+                            <div class="bg-gray-800 p-4 rounded-lg"><p>HTML5</p></div>
+                            <div class="bg-gray-800 p-4 rounded-lg"><p>CSS3 & Tailwind</p></div>
+                            <div class="bg-gray-800 p-4 rounded-lg"><p>JavaScript (ES6+)</p></div>
+                            <div class="bg-gray-800 p-4 rounded-lg"><p>Responsive Design</p></div>
+                            <div class="bg-gray-800 p-4 rounded-lg"><p>UI/UX Principles</p></div>
+                            <div class="bg-gray-800 p-4 rounded-lg"><p>Full-Stack Architecture</p></div>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: The Memoir -->
+        <section id="memoir" class="py-20 md:py-32 bg-gray-800/50">
+            <div class="container mx-auto px-6 fade-in-section">
+                <div class="md:flex items-center gap-12">
+                    <div class="md:w-1/3 mb-8 md:mb-0 text-center">
+                        <img src="https://i.imgur.com/k2x2xI7.png" alt="Book cover for Memoirs from the Psych Ward" class="mx-auto rounded-lg shadow-2xl max-w-xs">
+                    </div>
+                    <div class="md:w-2/3">
+                        <h2 class="text-4xl md:text-5xl font-display mb-4">The Memoir</h2>
+                        <h3 class="text-2xl font-display accent-gold mb-6">"Hatake Hugo - Memoirs from the Psych Ward"</h3>
+                        <p class="text-gray-300 text-lg mb-4">This book is not a glorification but a raw testimony. It chronicles a life of extreme contradictions, the consequences of my choices, and the search for redemption. Published across more than 50 platforms, it is the unfiltered source material from which my current vision was forged.</p>
+                        <p class="text-gray-400 mb-8">It stands as a testament to the journey of overcoming profound adversity and serves as the definitive account of the "unconventional education" that shaped my strategic perspective.</p>
+                        <div class="flex flex-wrap gap-4">
+                           <a href="http://amazon.com/Memoirs-Psych-Ward-Hatake-Hugo/dp/1967109087" class="btn bg-gray-700 text-white font-semibold py-2 px-6 rounded-lg hover:bg-accent-gold hover:text-gray-900" target="_blank" rel="noopener noreferrer">Buy on Amazon</a>
+                           <a href="https://www.adlibris.com/sv/bok/memoirs-from-the-psych-ward-9781967109081" class="btn bg-gray-700 text-white font-semibold py-2 px-6 rounded-lg hover:bg-accent-gold hover:text-gray-900" target="_blank" rel="noopener noreferrer">Buy on Adlibris</a>
+                           <a href="https://www.bokus.com/bok/9781967109081/memoirs-from-the-psych-ward/" class="btn bg-gray-700 text-white font-semibold py-2 px-6 rounded-lg hover:bg-accent-gold hover:text-gray-900" target="_blank" rel="noopener noreferrer">Buy on Bokus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 6: Connect -->
+        <section id="connect" class="py-20 md:py-32 bg-gray-900">
+            <div class="container mx-auto px-6 max-w-3xl text-center fade-in-section">
+                <h2 class="text-4xl md:text-5xl font-display mb-4">Let's Build Together</h2>
+                <p class="text-lg text-gray-400 mb-12">I am actively seeking partners, clients, and collaborators. For consulting, business inquiries, or media requests, please reach out.</p>
+                <form id="contact-form" action="https://formspree.io/f/mjkojvvl" method="POST" class="space-y-6">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required class="w-full bg-gray-800 border border-gray-700 rounded-lg p-4 text-white focus:ring-2 focus:ring-accent-gold focus:border-accent-gold outline-none">
+                        <span class="error-message text-red-400 text-sm mt-1 block h-5"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required class="w-full bg-gray-800 border border-gray-700 rounded-lg p-4 text-white focus:ring-2 focus:ring-accent-gold focus:border-accent-gold outline-none">
+                        <span class="error-message text-red-400 text-sm mt-1 block h-5"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" rows="6" placeholder="Your Message" required class="w-full bg-gray-800 border border-gray-700 rounded-lg p-4 text-white focus:ring-2 focus:ring-accent-gold focus:border-accent-gold outline-none"></textarea>
+                        <span class="error-message text-red-400 text-sm mt-1 block h-5"></span>
+                    </div>
+                    <button type="submit" class="btn bg-accent-gold text-gray-900 font-bold py-3 px-12 rounded-lg text-lg w-full md:w-auto">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800">
+        <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+            <div class="mb-4">
+                 <a href="https://www.linkedin.com/in/ernst-william-hertz-3b65a3200/" target="_blank" rel="noopener noreferrer" class="text-3xl text-gray-400 hover:text-accent-gold transition-colors duration-300">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 Ernst-William Hertz. All Rights Reserved.</p>
+            <p class="text-sm text-gray-500 mt-2">Forged in Falköping. Built in Skövde.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- Header Scroll Effect ---
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('py-2');
+                    header.classList.remove('py-4');
+                } else {
+                    header.classList.add('py-4');
+                    header.classList.remove('py-2');
+                }
+            });
+
+            // --- Mobile Menu ---
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const closeMobileMenuButton = document.getElementById('close-mobile-menu');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileNavLinks = document.querySelectorAll('#mobile-menu a');
+
+            const openMenu = () => {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.classList.add('flex');
+                document.body.style.overflow = 'hidden';
+            };
+            const closeMenu = () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+                document.body.style.overflow = '';
+            };
+
+            mobileMenuButton.addEventListener('click', openMenu);
+            closeMobileMenuButton.addEventListener('click', closeMenu);
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', closeMenu);
+            });
+
+            // --- Fade-in on Scroll ---
+            const faders = document.querySelectorAll('.fade-in-section');
+            const appearOptions = {
+                threshold: 0.15,
+                rootMargin: "0px 0px -50px 0px"
+            };
+            const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (!entry.isIntersecting) {
+                        return;
+                    }
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                });
+            }, appearOptions);
+
+            faders.forEach(fader => {
+                appearOnScroll.observe(fader);
+            });
+            
+            // --- Contact Form Validation ---
+            const contactForm = document.getElementById('contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    let errors = false;
+                    const name = document.getElementById('name');
+                    const email = document.getElementById('email');
+                    const message = document.getElementById('message');
+                    const inputs = [name, email, message];
+
+                    inputs.forEach(input => {
+                        const errorSpan = input.parentElement.querySelector('.error-message');
+                        errorSpan.textContent = '';
+                        input.classList.remove('border-red-400');
+                        input.classList.add('border-gray-700');
+                    });
+
+                    if (name.value.trim() === '') {
+                        errors = true;
+                        setError(name, 'Name is required.');
+                    }
+                    if (email.value.trim() === '') {
+                        errors = true;
+                        setError(email, 'Email is required.');
+                    } else if (!isValidEmail(email.value.trim())) {
+                        errors = true;
+                        setError(email, 'Please enter a valid email address.');
+                    }
+                    if (message.value.trim() === '') {
+                        errors = true;
+                        setError(message, 'Message is required.');
+                    }
+                    if (errors) {
+                        e.preventDefault();
+                    }
+                });
+            }
+
+            function setError(inputElement, message) {
+                const errorSpan = inputElement.parentElement.querySelector('.error-message');
+                errorSpan.textContent = message;
+                inputElement.classList.remove('border-gray-700');
+                inputElement.classList.add('border-red-400');
+            }
+
+            function isValidEmail(email) {
+                const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(String(email).toLowerCase());
+            }
+        });
+    </script>
+</body>
+</html>
